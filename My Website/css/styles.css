@@ -93,7 +93,7 @@ button,
     of 2px, a type of solid, and a color in RGBA format*/
     border-bottom:2px solid rgba(0, 0, 0, 0.3);
     transition: .2s opacity;
-    margin:auto;
+    margin:20px;
 }
 
 button:hover, button:focus,
@@ -135,9 +135,14 @@ button:hover, button:focus,
 }
 
 
+#title{
+    text-align:center;
+}
 /*centers about, creates flex box*/
-.about{
-display:block;
+.aboutme{
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
 text-align:center;
 justify-content:center;
 align-items: center;
@@ -149,16 +154,22 @@ margin:0 auto;
     list-style-type:none;
     text-align:left;
     justify-content: center;
-    display:inline-block;
+
 }
 
 
 .skills{
+float:left;
 list-style-type:none;
 text-align:center;
 margin:0;
 }
 
+#download-button{
+    align-content:center;
+    text-align:center;
+
+}
 
 /*stylizes header*/
 .page-header{
