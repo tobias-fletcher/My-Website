@@ -145,7 +145,7 @@ margin:0 auto;
 
 }
 
-#list{
+.list{
     list-style-type:none;
     text-align:left;
     justify-content: center;
