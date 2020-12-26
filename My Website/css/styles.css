@@ -286,96 +286,38 @@ margin:0;
  }
 }
 
-
-@keyframes color-change-yellow{
-    0%{
-        fill: #fff;
+@keyframes color-change-comet{
+    from{
+        fill: #f9ddbf;
     }
-    50%{
-        fill:#F7DC6F;
-    }
-    100%{
-        fill:#F1C40F;
+    to{
+        fill: red;
     }
 }
 
-#path2050 ,
-#path3122,
-#path3418,
-#path2540,
-#path2250,
-#path2514,
-#path2534,
-#path2508,
-#path3404,
-#path3230,
-#path3224,
-#path3208,
-#path3326,
-#path2898,
-#path2254,
-#path2528,
-#path2390,
-#path3344,
-#path2930,
-#path2656,
-#path3366,
-#path3474,
-#path3470
- {
-    animation-duration:4s;
-    animation-name:color-change-yellow;
-    animation-iteration-count:infinite;
-    animation-direction:alternate;
-    animation-timing-function:linear;
+#path134,
+#path130,
+#path132{
+    animation-duration:2s;
+    animation-name: color-change-comet;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
-@keyframes color-change-blue{
-    0%{
-        fill: #fff;
+@keyframes color-change-star{
+    from{
+        fill:#f9ddbf;
     }
-    50%{
-        fill: #AED6F1;
-    }
-    100%{
-        fill: #2E86C1;
+    to{
+    fill:yellow;
     }
 }
-
-#path1834,
-#path1794,
-#path3302,
-#path2498,
-#path2512,
-#path1880,
-#path1888,
-#path2494,
-#path2554,
-#path2488,
-#path3504,
-#path2036,
-#path3148,
-#path3222,
-#path2884,
-#path2826,
-#path3834,
-#path1796,
-#path3206,
-#path3236,
-#path2530,
-#path2546,
-#path3178,
-#path2230,
-#path3046,
-#path2670,
-#path3342,
-#path3090,
-#path1764,
-#path3472,
-#path3468
-{
-    animation-duration:4s;
-    animation-name:color-change-blue;
+#path208,
+#path210,
+#path206{
+    animation-duration:2s;
+    animation-name: color-change-star;
     animation-iteration-count:infinite;
     animation-direction:alternate;
     animation-timing-function:linear;
