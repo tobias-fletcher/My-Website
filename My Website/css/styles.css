@@ -1,22 +1,4 @@
-/*Colors used
-Links:
-- Purple (link) : #B985D5
-- Yellow (visited) : #8652A3
-- white (selected) : #F3E4FB
 
-Contact Info
-- Light Blue:#758AA8
-
-Name
-- Light Blue:#758AA8
-
-Button
-- Background: Purple :#20042F
-- Text: white : #F3E4FB
-*/
-
-/* includes all elements, sets default width
-to include padding and border*/
 :root{
     --primary-color-background:#211c1d;
     --link-color-light-purple:#B985D5;
@@ -40,38 +22,71 @@ body{
 
 }
 
-/*gives header 1 size & style*/
+/*headers*/
+
 h1 {
     font-size:30px;
     font-weight: var(--header-font-weight);
 }
 
-/*gives header 2 size & style*/
 h2{
-    font-size:18px;
+    font-size:24px;
+    font-weight:var(--header-font-weight);
+    text-align:center;
+}
+
+h3{
+    font-size:16px;
     font-weight:var(--header-font-weight);
 }
 
-/*gives link color*/ /*element selector*/
+.page-header{
+    display:flex;
+    width:100%;
+    padding:20px;
+}
+
+.page-header_item{
+    flex:0 1 200px;
+    width: 250px;
+    height:auto;
+}
+
+.page-header_item:last-child{
+    flex-grow: 1;
+    text-align:right;
+}
+
+
+/*navigation*/
+.navigation-list_item--active{
+    text-decoration: none;
+}
+
+.navigation-list{
+    list-style-type:none;
+}
+
+.navigation-list li{
+    display:inline-block;
+    margin-left:15px;
+}
+
+
 a{
     color:var(--link-color-light-purple);
 }
-/*makes links change color when mouse runs over*/
+
 a:hover, a:focus{
     text-decoration:none;
 }
 
-
-/*visited link*/
 a:visited{
     color:var(--dark-purple);
-
 }
 
-/*selected link*/
 a:active{
     color:#fff;
-
 }
 
 
@@ -104,13 +119,11 @@ button:hover, button:focus,
     opacity:0.8;
 }
 
-
-/*creates screen-reader text*/
 .screen-reader-only{
     display:none;
 }
 
-/*stylizes profile pic*/
+/*Index*/
 .profile_picture{
     float:left;
     width:250px;
@@ -119,50 +132,51 @@ button:hover, button:focus,
     border-radius:50%;
     }
 
-/*removes underline based on which page you are on*/
-.navigation-list_item--active{
-    text-decoration: none;
-}
-
-
-/* stylizes text of profile*/
 .profile{
     max-width:700px;
     margin:0 auto;
     text-align:center;
     font-family: 'Andika New Basic', sans-serif;
-
 }
-
 
 #title{
     text-align:center;
 }
-/*centers about, creates flex box*/
+
+/*about me page*/
 .aboutme{
 display:flex;
 flex-wrap:wrap;
 flex-direction:row;
 text-align:center;
-justify-content:center;
+justify-content:space-around;
 align-items: center;
 margin:0 auto;
-
+border-style:groove;
+border-color: var(--text-color);
 }
 
-.list{
-    list-style-type:none;
-    text-align:left;
+.interests{
+    text-align:center;
     justify-content: center;
-
+    width:400px;
+    margin:auto;
 }
 
+.interests li{
+    list-style-type:none;
+    text-align: center;
+}
 
+.skills li{
+    list-style-type:none;
+}
 .skills{
-float:left;
 list-style-type:none;
 text-align:center;
 margin:0;
+width:400px;
+margin:auto;
 }
 
 #download-button{
@@ -171,37 +185,48 @@ margin:0;
 
 }
 
-/*stylizes header*/
-.page-header{
+/*contact me*/
+.contact-box{
     display:flex;
-    width:100%;
-    padding:20px;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    margin: auto;
+    border-style: groove;
+    border-bottom:none;
+    border-color: var(--text-color);
+    padding-bottom:20px;
 }
 
-.page-header_item{
-    flex:0 1 200px;
-    width: 250px;
-    height:auto;
+.information{
+    width:300px;
+    height:425px;
+    justify-content:center;
 }
 
-.page-header_item:last-child{
-    flex-grow: 1;
-    text-align:right;
+.contact-form{
+    width:300px;
+    height:425px;
+}
+#contact{
+    display:flex;
+    justify-content:center;
 }
 
-/*take bullet points away created from <li>*/
-.navigation-list{
-    list-style-type:none;
+#contact-email{
+    width:200px;
+    height:20px;
 }
 
-/*puts home, about, contact nav on one line*/
-.navigation-list li{
-    display:inline-block;
-    margin-left:15px;
+#contact-telephone{
+    width:200px;
+    height:20px;
 }
 
-
-
+#contact-message{
+    width:200px;
+    height:60px;
+}
+/* WORK */
 /*start grid fallback*/
     .grid_item{
         margin:var(--margin-20);
@@ -233,7 +258,12 @@ margin:0;
     }*/
 }
 
-/*gives color to footer*/
+#work{
+    text-align:center;
+}
+
+/*FOOTER*/
+
 .social-media{
     background-color:#758AA8;
     color:black;
@@ -242,7 +272,6 @@ margin:0;
     border-radius:50%;
 }
 
-/*aligns footer to center, creates flex box column*/
 .page-footer{
     clear:both;
     display:flex;
