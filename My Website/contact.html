@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 <!--LINK TO STYLE SHEET-->
- <link rel="stylesheet" type="text/css" href="css/style.production.css">
+ <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 
@@ -35,35 +35,49 @@
        </nav>
     </header>
 
-<main>
-<div>
-    <h1 id="contact">Contact</h1><br>
-    Tobias Fletcher<br>
-    215 E. Chilhowie Ave.<br>
-    37601 Johnson City, TN<br>
-    United States<br>
-    <br>
-    Tel: <a href="tel:3158061106">+315 8061106<span class="screen-reader-only">Call Tobias</span></a><br>
-    Skype: <a href ="skype:tobias-fletcher">tobias_fletcher@icloud.com</a><br>
-    Email: <a href="mailto:tobias_fletcher@icloud.com">tobias_fletcher@icloud.com</a><br>
-    <a href="mailto:tobias_fletcher@icloud.com">Contact Me</a>
-</div>
-<div>
+<h1 id="contact">Contact</h1><br>
+<div class="contact-box">
+    <div class="information">
+        <h1>Tobias Fletcher</h1>
+        Johnson City, TN<br>
+        <br>
+        Tel:<br> <a href="tel:3158061106">+315 8061106<span class="screen-reader-only">Call Tobias</span></a><br>
+        Skype:<br> <a href ="skype:tobias-fletcher">tobias_fletcher@icloud.com</a><br>
+        Email:<br> <a href="mailto:tobias_fletcher@icloud.com">tobias_fletcher@icloud.com</a><br>
+        <br>
+        <a href="mailto:tobias_fletcher@icloud.com" class="button">Contact Me</a>
+    </div>
+    <div class="contact-form">
     <form action ="#" method="post" id="form1">
-        <label class = "standard-label" for="contact-email">E-mail:</label>
-        <input type="email" id="contact-email" required>
+        <h1>Send me a message</h1>
+        <div>
+            <label class = "standard-label" for="contact-email">E-mail:</label><br>
+            <input type="email" id="contact-email" required>
+        </div><br>
+        <div>
+            <label class="standard-label" for="contact-telephone" >Telephone:</label><br>
+            <input type="tel" id="contact-telephone" width="30px" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
+        </div><br>
+        <div>
+            <label class="standard-label" for="contact-message">Message:</label><br>
+            <textarea maxlength="240" id="contact-message" required></textarea>
+        </div><br>
+            <button type="submit" form="form1" value="Send Message">Send Message</button>
 
-        <label class="standard-label" for="contact-telephone">Telephone:</label>
-        <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-        <label class="standard-label" for="contact-message">Message:</label>
-        <textarea maxlength="240" id="contact-message" required></textarea>
-        <button type="submit" form="form1" value="Send Message">Send Message</button>
-
-    </form>
+        </form>
+    </div>
 </div>
-
-</main>
+<footer class="page-footer">
+  <div class="social-media">
+    <p>Find me on</p>
+    <img src="img/icon.GitHub.svg" alt= "Black & White Icon of Github which is
+    an outline of a cat in a circle.">
+    <img src="img/icon.facebook.svg" alt="Black & White Icon of Facebook
+    which is a white f in a black box.">
+    <img src="img/icon.linkedin2.svg" alt="Black & White Icon of LinkedIn which
+    is white letters i n in a black box.">
+  </div>
+</footer>
 
 <script src="js/tota11y.min.js"></script>
 
