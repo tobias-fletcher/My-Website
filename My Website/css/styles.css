@@ -1,4 +1,3 @@
-
 :root{
     --primary-color-background:#211c1d;
     --link-color-light-purple:#B985D5;
@@ -6,6 +5,11 @@
     --text-color:#758AA8;
     --header-font-weight:700;
     --margin-20:20px;
+    --text-box-width:200px;
+    --text-box-height:20px;
+    --about-me-box-width:400px;
+    --contact-box-height:425px;
+    --contact-box-width:300px;
 }
 
 *{
@@ -159,7 +163,7 @@ border-color: var(--text-color);
 .interests{
     text-align:center;
     justify-content: center;
-    width:400px;
+    width:var(--about-me-box-width);
     margin:auto;
 }
 
@@ -175,7 +179,7 @@ border-color: var(--text-color);
 list-style-type:none;
 text-align:center;
 margin:0;
-width:400px;
+width:var(--about-me-box-width);
 margin:auto;
 }
 
@@ -191,21 +195,20 @@ margin:auto;
     flex-direction:row-reverse;
     justify-content:space-around;
     margin: auto;
-    border-style: groove;
-    border-bottom:none;
-    border-color: var(--text-color);
+    border-top-style:groove;
+    border-top-color: var(--text-color);
     padding-bottom:20px;
 }
 
 .information{
-    width:300px;
-    height:425px;
+    width:var(--contact-box-width);
+    height:var(--contact-box-height);
     justify-content:center;
 }
 
 .contact-form{
-    width:300px;
-    height:425px;
+    width:var(--contact-box-width);
+    height:var(--contact-box-height);
 }
 #contact{
     display:flex;
@@ -213,18 +216,18 @@ margin:auto;
 }
 
 #contact-email{
-    width:200px;
-    height:20px;
+    width:var(--text-box-width);
+    height:var(--text-box-height);
 }
 
 #contact-telephone{
-    width:200px;
-    height:20px;
+    width:var(--text-box-width);
+    height:var(--text-box-height)
 }
 
 #contact-message{
-    width:200px;
-    height:60px;
+    width:var(--text-box-width);
+    height: calc(3*var(--text-box-height));
 }
 /* WORK */
 /*start grid fallback*/

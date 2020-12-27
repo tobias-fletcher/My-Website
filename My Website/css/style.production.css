@@ -1,33 +1,5 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v7.0.29,
-* Autoprefixer: v9.7.6
-* Browsers: last 4 version
-*/
-
-/*C/*Colors used
-Links:
-- Purple (link) : #B985D5
-- Yellow (visited) : #8652A3
-- white (selected) : #F3E4FB
-
-Contact Info
-- Light Blue:#758AA8
-
-Name
-- Light Blue:#758AA8
-
-Button
-- Background: Purple :#20042F
-- Text: white : #F3E4FB
-*/
-
-/* includes all elements, sets default width
-to include padding and border*/
-
 *{
-    -webkit-box-sizing:border-box;
-            box-sizing:border-box;
+    box-sizing:border-box;
 }
 /*gives color, font, style, sizes to body*/
 body{
@@ -40,38 +12,71 @@ body{
 
 }
 
-/*gives header 1 size & style*/
+/*headers*/
+
 h1 {
     font-size:30px;
     font-weight: 700;
 }
 
-/*gives header 2 size & style*/
 h2{
-    font-size:18px;
+    font-size:24px;
+    font-weight:700;
+    text-align:center;
+}
+
+h3{
+    font-size:16px;
     font-weight:700;
 }
 
-/*gives link color*/ /*element selector*/
+.page-header{
+    display:flex;
+    width:100%;
+    padding:20px;
+}
+
+.page-header_item{
+    flex:0 1 200px;
+    width: 250px;
+    height:auto;
+}
+
+.page-header_item:last-child{
+    flex-grow: 1;
+    text-align:right;
+}
+
+
+/*navigation*/
+.navigation-list_item--active{
+    text-decoration: none;
+}
+
+.navigation-list{
+    list-style-type:none;
+}
+
+.navigation-list li{
+    display:inline-block;
+    margin-left:15px;
+}
+
+
 a{
     color:#B985D5;
 }
-/*makes links change color when mouse runs over*/
+
 a:hover, a:focus{
     text-decoration:none;
 }
 
-
-/*visited link*/
 a:visited{
     color:#8652A3;
-
 }
 
-/*selected link*/
 a:active{
     color:#fff;
-
 }
 
 
@@ -91,10 +96,8 @@ button{
     /*gives the button a bottom border with a width:
     of 2px, a type of solid, and a color in RGBA format*/
     border-bottom:2px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: .2s opacity;
-    -o-transition: .2s opacity;
     transition: .2s opacity;
-    margin:auto;
+    margin:20px;
 }
 
 
@@ -114,10 +117,8 @@ button{
     /*gives the button a bottom border with a width:
     of 2px, a type of solid, and a color in RGBA format*/
     border-bottom:2px solid rgba(0, 0, 0, 0.3);
-    -webkit-transition: .2s opacity;
-    -o-transition: .2s opacity;
     transition: .2s opacity;
-    margin:auto;
+    margin:20px;
 }
 
 button:hover, button:focus,
@@ -128,13 +129,11 @@ button:hover, button:focus,
     opacity:0.8;
 }
 
-
-/*creates screen-reader text*/
 .screen-reader-only{
     display:none;
 }
 
-/*stylizes profile pic*/
+/*Index*/
 .profile_picture{
     float:left;
     width:250px;
@@ -143,90 +142,100 @@ button:hover, button:focus,
     border-radius:50%;
     }
 
-/*removes underline based on which page you are on*/
-.navigation-list_item--active{
-    text-decoration: none;
-}
-
-
-/* stylizes text of profile*/
 .profile{
     max-width:700px;
     margin:0 auto;
     text-align:center;
     font-family: 'Andika New Basic', sans-serif;
-
 }
 
+#title{
+    text-align:center;
+}
 
-/*centers about, creates flex box*/
-.about{
-display:block;
+/*about me page*/
+.aboutme{
+display:flex;
+flex-wrap:wrap;
+flex-direction:row;
 text-align:center;
--webkit-box-pack:center;
-    -ms-flex-pack:center;
-        justify-content:center;
--webkit-box-align: center;
-    -ms-flex-align: center;
-        align-items: center;
+justify-content:space-around;
+align-items: center;
 margin:0 auto;
-
+border-style:groove;
+border-color: #758AA8;
 }
 
-#list{
+.interests{
+    text-align:center;
+    justify-content: center;
+    width:400px;
+    margin:auto;
+}
+
+.interests li{
     list-style-type:none;
-    text-align:left;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    display:inline-block;
+    text-align: center;
 }
 
-
+.skills li{
+    list-style-type:none;
+}
 .skills{
 list-style-type:none;
 text-align:center;
 margin:0;
+width:400px;
+margin:auto;
 }
 
+#download-button{
+    align-content:center;
+    text-align:center;
 
-/*stylizes header*/
-.page-header{
-    display:-webkit-box;
-    display:-ms-flexbox;
+}
+
+/*contact me*/
+.contact-box{
     display:flex;
-    width:100%;
-    padding:20px;
+    flex-direction:row-reverse;
+    justify-content:space-around;
+    margin: auto;
+    border-top-style:groove;
+    border-top-color: #758AA8;
+    padding-bottom:20px;
 }
 
-.page-header_item{
-    -webkit-box-flex:0;
-        -ms-flex:0 1 200px;
-            flex:0 1 200px;
-    width: 250px;
-    height:auto;
+.information{
+    width:300px;
+    height:425px;
+    justify-content:center;
 }
 
-.page-header_item:last-child{
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    text-align:right;
+.contact-form{
+    width:300px;
+    height:425px;
+}
+#contact{
+    display:flex;
+    justify-content:center;
 }
 
-/*take bullet points away created from <li>*/
-.navigation-list{
-    list-style-type:none;
+#contact-email{
+    width:200px;
+    height:20px;
 }
 
-/*puts home, about, contact nav on one line*/
-.navigation-list li{
-    display:inline-block;
-    margin-left:15px;
+#contact-telephone{
+    width:200px;
+    height:20px
 }
 
-
-
+#contact-message{
+    width:200px;
+    height: calc(3*20px);
+}
+/* WORK */
 /*start grid fallback*/
     .grid_item{
         margin:20px;
@@ -237,9 +246,7 @@ margin:0;
 
 @supports(display:grid){
     .grid{
-        display:-ms-grid;
         display:grid;
-        -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap:20px;
         margin:20px;
@@ -260,7 +267,12 @@ margin:0;
     }*/
 }
 
-/*gives color to footer*/
+#work{
+    text-align:center;
+}
+
+/*FOOTER*/
+
 .social-media{
     background-color:#758AA8;
     color:black;
@@ -269,16 +281,10 @@ margin:0;
     border-radius:50%;
 }
 
-/*aligns footer to center, creates flex box column*/
 .page-footer{
     clear:both;
-    display:-webkit-box;
-    display:-ms-flexbox;
     display:flex;
-    -webkit-box-orient:vertical;
-    -webkit-box-direction:normal;
-        -ms-flex-direction:column;
-            flex-direction:column;
+    flex-direction:column;
     text-align:center;
 
 }
@@ -288,7 +294,6 @@ margin:0;
 /* between 0 & 500px*/
 @media all and (max-width: 500px) {
   .grid {
-    -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
   h1 {
@@ -298,7 +303,6 @@ margin:0;
 /* media between 500 & 700px)*/
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
-    -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
   h1 {
@@ -320,132 +324,39 @@ margin:0;
  }
 }
 
-
-@-webkit-keyframes color-change-yellow{
-    0%{
-        fill: #fff;
+@keyframes color-change-comet{
+    from{
+        fill: #f9ddbf;
     }
-    50%{
-        fill:#F7DC6F;
-    }
-    100%{
-        fill:#F1C40F;
+    to{
+        fill: red;
     }
 }
 
-
-@keyframes color-change-yellow{
-    0%{
-        fill: #fff;
-    }
-    50%{
-        fill:#F7DC6F;
-    }
-    100%{
-        fill:#F1C40F;
-    }
+#path134,
+#path130,
+#path132{
+    animation-duration:2s;
+    animation-name: color-change-comet;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
 }
 
-#path2050 ,
-#path3122,
-#path3418,
-#path2540,
-#path2250,
-#path2514,
-#path2534,
-#path2508,
-#path3404,
-#path3230,
-#path3224,
-#path3208,
-#path3326,
-#path2898,
-#path2254,
-#path2528,
-#path2390,
-#path3344,
-#path2930,
-#path2656,
-#path3366,
-#path3474,
-#path3470
- {
-    -webkit-animation-duration:4s;
-            animation-duration:4s;
-    -webkit-animation-name:color-change-yellow;
-            animation-name:color-change-yellow;
-    -webkit-animation-iteration-count:infinite;
-            animation-iteration-count:infinite;
-    -webkit-animation-direction:alternate;
-            animation-direction:alternate;
-    -webkit-animation-timing-function:linear;
-            animation-timing-function:linear;
-}
-
-@-webkit-keyframes color-change-blue{
-    0%{
-        fill: #fff;
+@keyframes color-change-star{
+    from{
+        fill:#f9ddbf;
     }
-    50%{
-        fill: #AED6F1;
-    }
-    100%{
-        fill: #2E86C1;
+    to{
+    fill:yellow;
     }
 }
-
-@keyframes color-change-blue{
-    0%{
-        fill: #fff;
-    }
-    50%{
-        fill: #AED6F1;
-    }
-    100%{
-        fill: #2E86C1;
-    }
-}
-
-#path1834,
-#path1794,
-#path3302,
-#path2498,
-#path2512,
-#path1880,
-#path1888,
-#path2494,
-#path2554,
-#path2488,
-#path3504,
-#path2036,
-#path3148,
-#path3222,
-#path2884,
-#path2826,
-#path3834,
-#path1796,
-#path3206,
-#path3236,
-#path2530,
-#path2546,
-#path3178,
-#path2230,
-#path3046,
-#path2670,
-#path3342,
-#path3090,
-#path1764,
-#path3472,
-#path3468
-{
-    -webkit-animation-duration:4s;
-            animation-duration:4s;
-    -webkit-animation-name:color-change-blue;
-            animation-name:color-change-blue;
-    -webkit-animation-iteration-count:infinite;
-            animation-iteration-count:infinite;
-    -webkit-animation-direction:alternate;
-            animation-direction:alternate;
-    -webkit-animation-timing-function:linear;
-            animation-timing-function:linear;
+#path208,
+#path210,
+#path206{
+    animation-duration:2s;
+    animation-name: color-change-star;
+    animation-iteration-count:infinite;
+    animation-direction:alternate;
+    animation-timing-function:linear;
 }
