@@ -266,6 +266,11 @@ margin:auto;
     text-align:center;
 }
 
+#pokemonBackground{
+    background-image: url('img/pokeBackground'); 
+
+}
+
 /*FOOTER*/
 
 .social-media{
