@@ -247,7 +247,7 @@ margin:auto;
         margin:var(--margin-20);
     }
     .grid_item{
-        background-color:lightgray;
+        /*background-color:lightgray;*/
         width:auto;
         min-height:auto;
         margin:0;
@@ -266,10 +266,10 @@ margin:auto;
     text-align:center;
 }
 
-#pokemonBackground{
-    background-image: url('img/pokeBackground'); 
-
+#pokedexBackground { 
+    background-image: url("/img/pokeBackground.png");
 }
+
 
 /*FOOTER*/
 
