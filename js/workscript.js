@@ -75,7 +75,7 @@ var closeBtns = document.querySelectorAll("modal-close");
 */
 window.onclick = function (event) {
     console.log(event);
-    if (event.target == modal) {
+    if (event.target == 'data-modal') {
         modal.style.display = "none";
     }
 }
