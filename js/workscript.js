@@ -62,15 +62,8 @@ modalBtns.forEach(function (btn) {
 
 var closeBtns = document.querySelectorAll("modal-close");
 
-closeBtns.forEach(function (span) {
-    span.onclick = function () {
-        modal.style.display = "none";
-    }
-
+closeBtns.forEach(function (btn) {
+    btn.onclick = function () {
+        var modal = (btn.closest(".modal").style.display = "none");
+    };
 });
-
-window.onclick = function (event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
