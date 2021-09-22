@@ -60,12 +60,13 @@ modalBtns.forEach(function (btn) {
     };
 });
 
-var closeBtns = document.querySelectorAll("modal-close");
+var span = document.getElementsByClassName("close");
+var modal;
 
-closeBtns.forEach(function (btn) {
-    btn.onclick = function () {
-        var modal = btn.getAttribute("data-modal");
-        console.log('change');
-        document.getElementById(modal).style.display = "none";
-    };
-});
+for (var i = 0; i < span.length; i++) {
+    span[i].onclick = function () {
+        modal.style.display = "none"
+    }
+}
+
+
