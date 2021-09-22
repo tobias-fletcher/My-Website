@@ -63,7 +63,13 @@ modalBtns.forEach(function (btn) {
 var closeBtns = document.querySelectorAll("modal-close");
 
 closeBtns.forEach(function (btn) {
-    btn.onclick = function () {
-        var modal = (btn.close(".modal").style.display = "none");
-    };
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
