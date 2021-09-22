@@ -50,7 +50,7 @@ window.onclick = function (event) {
 }*/
 
 
-var modalBtns = document.querySelectorAll(".modal=open");
+var modalBtns = document.querySelectorAll(".modal-open");
 
 modalBtns.forEach(function (btn) {
     btn.onclick = function () {
