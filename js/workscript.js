@@ -62,7 +62,7 @@ modalBtns.forEach(function (btn) {
 
 var closeBtns = document.querySelectorAll("modal-close");
 
-closeBtns.forEach(function (btn) {
+closeBtns.forEach(function () {
     window.onclick = function (event) {
         if (event.target === modal) {
             modal.style.display = "none";
