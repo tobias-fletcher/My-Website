@@ -266,7 +266,7 @@ margin:auto;
     text-align:center;
 }
 
-#pokedexBackground { 
+.pokedexBackground { 
     background-image: url("/img/pokeBackground.png");
 }
 
