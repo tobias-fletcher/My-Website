@@ -266,6 +266,10 @@ margin:auto;
     text-align:center;
 }
 
+#pokedexBackground { 
+    background-image: url("/img/pokeBackground.png");
+}
+
 /*FOOTER*/
 
 .social-media{
