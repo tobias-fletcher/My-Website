@@ -60,13 +60,10 @@ modalBtns.forEach(function (btn) {
     };
 });
 
-var span = document.getElementsByClassName("close");
-var modal;
+var modal = document.getElementById('modal1');
 
-for (var i = 0; i < span.length; i++) {
-    span[i].onclick = function () {
-        modal.style.display = "none"
+window.onclick = function (event) {
+    if (event.target === modal) {
+        modal.style.display = "none";
     }
 }
-
-
