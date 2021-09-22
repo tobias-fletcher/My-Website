@@ -62,21 +62,10 @@ modalBtns.forEach(function (btn) {
 
 var closeBtns = document.querySelectorAll("modal-close");
 
-/*closeBtns.forEach(function (btn) {
-    btn.onclick = function () {
-        var modal = (btn.closest(".modal").style.display = "none");
+closeBtns.forEach(function (btn) {
+    window.onclick = function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
     };
-});*/
-
-
-/*span.onclick = function () {
-    modal.style.display = "none";
-}
-*/
-window.onclick = function (event) {
-    var modal = event.getAttribute("data-modal");
-    document.getElementById(modal).style.display = "block";
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
+});
