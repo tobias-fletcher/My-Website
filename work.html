@@ -52,12 +52,14 @@
             background-size: contain;
             background-repeat: no-repeat;
             object-fit: cover;
-            display: flex;
-            flex-direction: column;
             background-position: center;
             text-align: center;
+        }
+
+        .modal-style {
+            display: flex;
+            flex-direction: center;
             justify-content: center;
-            align-items: center;
         }
 
         /* The Close Button */
@@ -112,18 +114,17 @@
                     <button data-modal="modal1" class="modal-open">About App</button>
                     <div id="modal1" class="modal">
                         <div class="modal-content" style=" background-image: url('img/pokeBackground.png')">
-                            <div>
-                                <button data-dismiss="modal1" class="modal-close" style="float: right">Close</button>
+                            <button data-dismiss="modal1" class="modal-close" style="float: right">Close</button>
+                            <div class="modal-style">
+                                <h2> <a href="https://tobias-fletcher.github.io/Pokedex/">Pokedex</a></h2>
+
+                                <p>
+                                    React Website displaying of Pokemon.
+                                    Design use of react bootstrap, and css.
+                                    Use of external API to show pokemon.
+                                </p>
+                                <a href="https://github.com/tobias-fletcher/Pokedex">Link to GitHub</a>
                             </div>
-                            <h2> <a href="https://tobias-fletcher.github.io/Pokedex/">Pokedex</a></h2>
-
-                            <p>
-                                React Website displaying of Pokemon.
-                                Design use of react bootstrap, and css.
-                                Use of external API to show pokemon.
-                            </p>
-                            <a href="https://github.com/tobias-fletcher/Pokedex">Link to GitHub</a>
-
                         </div>
                     </div>
                 </div>
