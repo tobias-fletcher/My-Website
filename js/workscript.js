@@ -50,6 +50,7 @@ window.onclick = function (event) {
 }*/
 
 
+
 var modalBtns = document.querySelectorAll(".modal-open");
 
 modalBtns.forEach(function (btn) {
@@ -60,3 +61,8 @@ modalBtns.forEach(function (btn) {
     };
 });
 
+for (var i = 0; i < span.length; i++) {
+    span[i].onclick = function () {
+        modal.style.display = "none";
+    }
+}
