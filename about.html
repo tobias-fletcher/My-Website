@@ -16,7 +16,7 @@
 
     span:after {
         content: '-';
-        animation: blink-caret .75s step-end infinite;
+        animation: blinking .75s step-end infinite;
         color: transparent;
         display: inline-block;
         width: 5px;
@@ -42,6 +42,18 @@
 
         50% {
             border-color: orange;
+        }
+    }
+
+    @keyframes blinking {
+
+        from,
+        to {
+            background: transparent;
+        }
+
+        50% {
+            background: black;
         }
     }
 </style>
