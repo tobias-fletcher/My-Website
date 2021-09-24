@@ -67,6 +67,6 @@ modals.forEach(function (btn) {
     btn.onclick = function () {
         var modal = btn.getAttribute("data-modal");
 
-        document.getElementByClassName(modal).style.display = "none";
+        document.getElementByClassName("modal").style.display = "none";
     };
 });
