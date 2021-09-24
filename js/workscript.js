@@ -65,7 +65,8 @@ var span = document.getElementsByClassName("close");
 
 
 for (var i = 0; i < span.length; i++) {
-    span[i].onclick = function () {
+    span[i].onclick = function (c) {
+        var modal = c.getAttribute("close");
         document.getElementById(modal).style.display = "none";
     }
 }
