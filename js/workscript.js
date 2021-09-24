@@ -61,12 +61,11 @@ modalBtns.forEach(function (btn) {
     };
 });
 
-var span = document.getElementsByClassName("close");
+var modals = document.querySelectorAll(".modal-close")
 
-
-for (var i = 0; i < span.length; i++) {
-    span[i].onclick = function (c) {
-        //var modal = document.querySelectorAll(".modal");
-        document.getElementByClassName(modal).style.display = "none";
-    }
-}
+modals.forEach(function (btn) {
+    btn.onclick = function () {
+        var modal = btn.getAttribute("data=modal");
+        document.getElementById(modal).style.display = "none";
+    };
+});
