@@ -62,6 +62,7 @@ modalBtns.forEach(function (btn) {
 });
 
 var span = document.getElementsByClassName("close");
+var modal;
 
 for (var i = 0; i < span.length; i++) {
     span[i].onclick = function () {
