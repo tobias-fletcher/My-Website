@@ -65,7 +65,7 @@ var modals = document.querySelectorAll(".modal-close")
 
 modals.forEach(function (btn) {
     btn.onclick = function () {
-        var modal = document.getElementById("modal");
+        var modal = btn.getAttribute("data-dismiss");
         document.getElementById(modal).style.display = "none";
     };
 });
