@@ -66,7 +66,7 @@ var span = document.getElementsByClassName("close");
 
 for (var i = 0; i < span.length; i++) {
     span[i].onclick = function (c) {
-        var modal = document.querySelectorAll(".modal");
-        document.getElementById(modal).style.display = "none";
+        //var modal = document.querySelectorAll(".modal");
+        document.getElementById("modal").style.display = "none";
     }
 }
