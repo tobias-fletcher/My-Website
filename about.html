@@ -2,22 +2,21 @@
 <html lang=en>
 
 <style>
-    #title h1 {
-        overflow: hidden;
+    h1 {
         position: relative;
+        width: fit-content;
+        overflow: hidden;
         border-right: .15em solid #758AA8;
         white-space: nowrap;
+        margin: 0 auto;
         letter-spacing: .15em;
-        margin: auto;
-        width: fit-content;
-        animation:
-            typing 3.5s steps(100, end),
+        animation: typing 3.5s steps(100, end),
             blink-caret .75s step-end infinite;
     }
 
     span:after {
         content: '-';
-        animation: blinking .75s step-end infinite;
+        animation: blink-caret .75s step-end infinite;
         color: transparent;
         display: inline-block;
         width: 5px;
@@ -43,18 +42,6 @@
 
         50% {
             border-color: #758AA8;
-        }
-    }
-
-    @keyframes blinking {
-
-        from,
-        to {
-            background: transparent;
-        }
-
-        50% {
-            background: black;
         }
     }
 </style>
