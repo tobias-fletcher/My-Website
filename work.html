@@ -117,7 +117,8 @@
                     <h1>Pokedex</h1>
                     <button data-modal="modal1" class="modal-open">About App</button>
                     <div id="modal1" class="modal">
-                        <div class="modal-content" style=" background-image: url('img/pokeBackground.png')">
+                        <div class="modal-content"
+                            style=" background-image: url('img/pokeBackground.png'); overflow:auto">
                             <div style="flex: none;">
                                 <button data-dismiss="modal1" class="modal-close"
                                     style="margin-left: 90%; font-size: 15px; height: auto; margin-bottom: 0">Close</button>
@@ -125,24 +126,58 @@
                                     <a href="https://tobias-fletcher.github.io/Pokedex/">Pokedex</a>
                                 </h2>
                             </div>
-                            <div class="modal-style">
-                                <p>
-                                    Objective: Objective
-                                    To build a small web application with HTML, CSS, and JavaScript that loads
-                                    data from an external API and enables the viewing of data points in detail.
-                                </p>
-                                <p>
-                                    Key Features
-                                    ● Load data from an external source (API)
-                                    ● View a list of items
-                                    ● On user action (e.g., by clicking on a list item), view details for that item
+                            <div class="modal-style" style="display: flex; justify-content: center">
+                                <div style='display: flex; flex-direction:row; justify-content: center'>
+                                    <div style="width: 30%; height: 40%; margin: 5%">
+                                        <h1>OverView</h1>
+                                        <p> A web application that shows the user a list of pokemond. It allows the user
+                                            to
+                                            search for specific pokemon and view that pokemons stats. The stats are
+                                            pulled
+                                            from an external API.
+                                        </p>
+                                        <img src="./img/pokeHomePage.png" alt="view of pokemon details" />
 
-                                </p>
-                                <p>
-                                    React Website displaying of Pokemon.
-                                    Design use of react bootstrap, and css.
-                                    Use of external API to show pokemon.
-                                </p>
+                                    </div>
+
+                                    <div style="width: 30%; height: 40%; margin: 5%">
+                                        <h1> Objective</h1>
+                                        <p>
+                                            To build a small web application with HTML, CSS, and JavaScript that loads
+                                            data from an external API and enables the viewing of data. You are able to
+                                            search for Pokemon using a search bar.
+                                        </p>
+
+                                        <img src="./img/pokeSearchPage.png" alt="view of pokemon details" />
+
+                                    </div>
+                                </div>
+                                <div style='display: flex; flex-direction:row; justify-content: center'>
+
+                                    <div style="width: 30%; height: 40%; margin: 5%">
+                                        <h1>Tools/Skills</h1>
+                                        <p>
+                                            - Load data from an external source (API) <br />
+                                            - HTML; CSS; JS<br />
+                                            - user action (e.g., by clicking on a list item), view details for that
+                                            item<br />
+
+                                        </p>
+                                        <img src="./img/pokeModalDetails.png" alt="view of pokemon details" />
+                                    </div>
+                                    <div style=" width: 30%; height: 40%; margin:5%">
+                                        <h1>Purpose and Context</h1>
+                                        <p>
+                                            React Website displaying of Pokemon.
+                                            Show use of skills utilizing html/css/bootstrap
+                                            Use of external API to show pokemon.
+                                        </p>
+                                        <h1>Challenges</h1>
+                                        <p>This was the first time that I had the opportunity to utilize an API. I had
+                                            to learn how to get the information from the API website and utilize it in
+                                            my application.</p>
+                                    </div>
+                                </div>
                                 <a style="margin-bottom: 10%" href="https://github.com/tobias-fletcher/Pokedex">Link to
                                     GitHub</a>
                             </div>
@@ -162,27 +197,56 @@
                                 <h2 style="    margin-top: 0; text-align: center; font-size: 40px; align-items: center">
                                     <a href="https://zealous-banach-c1d750.netlify.app">HorrorTime</a>
                                 </h2>
-                                <p>
-                                    Objective
-                                    To build the server-side component of a “movies” web application. The web
-                                    application will provide users with access to information about different
-                                    movies, directors, and genres. Users will be able to sign up, update their
-                                    personal information, and create a list of their favorite movies.
-                                </p>
-                                <p>
-                                    Essential Features
-                                    ● Return a list of ALL movies to the user
-                                    ● Return data (description, genre, director, image URL, whether it’s featured or
-                                    not) about a
-                                    single movie by title to the user
-                                    ● Return data about a genre (description) by name/title (e.g., “Thriller”)
-                                    ● Return data about a director (bio, birth year, death year) by name
-                                    ● Allow new users to register
-                                    ● Allow users to update their user info (username, password, email, date of birth)
-                                    ● Allow users to add a movie to their list of favorites
-                                    ● Allow users to remove a movie from their list of favorites
-                                    ● Allow existing users to deregister
-                                </p>
+                                <div
+                                    style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                                    <div style='display: flex; flex-direction:row; justify-content: center'>
+                                        <div style="max-width: 30%; max-height: 40%">
+
+                                            <h1>Overview</h1>
+                                            <p>This is a web application built using React Redux. This application
+                                                allows
+                                                users horror movies. They can register a user account, save their
+                                                favorites,
+                                                and
+                                                even update their user information. </p>
+                                        </div>
+                                        <div style="max-width: 30%; max-height: 40%">
+                                            <h1> Objective</h1>
+                                            <p>
+                                                To build the server-side component of a “movies” web application. The
+                                                web
+                                                application will provide users with access to information about
+                                                different
+                                                movies, directors, and genres. Users will be able to sign up, update
+                                                their
+                                                personal information, and create a list of their favorite movies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style='display: flex; flex-direction:row; justify-content: center'>
+
+                                        <div style="max-width: 30%; max-height: 40%; contain:content">
+                                            <h1>Purpose and Context</h1>
+                                            <p>
+                                                This was built to better understand server-side and client-side
+                                                logic.
+                                                It
+                                                expanded my knowledge of well-known libraries and frameworks such as
+                                                React
+                                                and
+                                                Redux.
+                                            </p>
+                                        </div>
+                                        <div style="max-width: 30%; max-height: 40%; contain: content">
+                                            <h1>Approach </h1>
+                                            <h2>Server-Side</h2>
+                                            <p>See [link to horror-time here]</p>
+                                            <h2>Client-side</h2>
+                                            <p></p>
+
+                                        </div>
+                                    </div>
+                                </div>
                                 <p style="margin-bottom: 10%">
                                     <a style="margin-bottom: 10%"
                                         href="https://github.com/tobias-fletcher/horrorTime-client">Link to
