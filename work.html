@@ -7,119 +7,381 @@
     <title>Tobias' Portfolio</title>
     <link rel="shortcut icon" href="./img/icon3.png">
     <!--NORMALIZE-->
-    <link rel="stylesheet" type="texT/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
 ">
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <!--LINK TO STYLE SHEET-->
     <link rel="stylesheet" type="text/css" href="css/style.production.css">
+
+    <style>
+        /* The Modal (background) */
+        .modal {
+            display: none;
+            /* Hidden by default */
+            position: fixed;
+            /* Stay in place */
+            z-index: 1;
+            /* Sit on top */
+            padding-top: 100px;
+            /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%;
+            /* Full width */
+            height: 100%;
+            /* Full height */
+            overflow: auto;
+            /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0);
+            /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4);
+            /* Black w/ opacity */
+        }
+
+        /* Modal Content */
+        .modal-content {
+            background-color: black;
+            margin: 5%;
+            padding: 20px;
+            border: 1px solid #888;
+            max-width: 100%;
+            max-height: 100%;
+            background-color: black;
+            background-size: contain;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-position: center;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        .modal-style {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*border: solid;*/
+            padding: 10px;
+        }
+
+        /* The Close Button */
+        .modal-close {
+            color: #aaaaaa;
+            font-size: 28px;
+            font-weight: bold;
+
+        }
+
+        .modal-close:hover,
+        .modal-close:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
+    </head>
 
-    <header class="page-header">
-        <!--<img src="img/logo.png" alt="Personal Logo of Tobias
+    <body>
+
+        <header class="page-header">
+            <!--<img src="img/logo.png" alt="Personal Logo of Tobias
      Fletcher, a text logo in uppercase letters that consists of my name. " class="page-header_item">
          LINKS TO OTHER PAGES-->
-        <nav class="main-navigation page-header_item">
-            <ul role="menubar" class="navigation-list">
-                <li role="presentation">
-                    <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
-                </li>
-                <li role="presentation">
-                    <a href="about.html" role="menuitem" class="navigation-list_item">About<span
-                            class="screen-reader-only">Learn about Tobias</span></a>
-                </li>
-                <li role="presentation">
-                    <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+            <nav class="main-navigation page-header_item">
+                <ul role="menubar" class="navigation-list">
+                    <li role="presentation">
+                        <a href="index.html" role="menuitem" class="navigation-list_item">Home</a>
+                    </li>
+                    <li role="presentation">
+                        <a href="about.html" role="menuitem" class="navigation-list_item">About<span
+                                class="screen-reader-only">Learn about Tobias</span></a>
+                    </li>
+                    <li role="presentation">
+                        <a href="contact.html" role="menuitem" class="navigation-list_item">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
 
-    <section>
-        <h1 id="work">Work</h1>
-        <div class="grid">
-            <div class="grid_item"
-                style='background-image: url("img/pokeBackground1.png"); background-size: cover;  background-repeat: no-repeat;'>
-                <!--    <h2> <a href="https://tobias-fletcher.github.io/Pokedex/">Pokedex</a></h2>
+        <section>
+            <h1 id="work">Projects</h1>
+            <div class="grid">
+                <div class="grid_item"
+                    style='background-color: black; background-size: cover;  background-repeat: no-repeat; border: solid;'>
+                    <h1>Pokedex</h1>
+                    <button data-modal="modal1" class="modal-open">About App</button>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content"
+                            style=" background-image: url('img/pokeBackground.png'); overflow:auto">
+                            <div style="flex: none;">
+                                <button data-dismiss="modal1" class="modal-close"
+                                    style="margin-left: 90%; font-size: 15px; height: auto; margin-bottom: 0">Close</button>
+                                <h2 style="    margin-top: 0; text-align: center; font-size: 40px; align-items: center">
+                                    <a href="https://tobias-fletcher.github.io/Pokedex/">Pokedex</a>
+                                </h2>
+                            </div>
+                            <div class="modal-style" style="display: flex; justify-content: center">
+                                <div style='display: flex; flex-direction:row; justify-content: center'>
+                                    <div style="width: 30%; height: 40%; margin: 5%">
+                                        <h1>OverView</h1>
+                                        <p> A web application that shows the user a list of pokemon. It allows the user
+                                            to search for specific pokemon and view that pokemon's stats. The stats are
+                                            pulled from an external API.
+                                        </p>
+                                        <img src="./img/pokeHomePage.png" alt="view of pokemon details"
+                                            style="width: 300px; height: 225px;" />
 
-                <p>
-                    React Website displaying of Pokemon.
-                </p>
-                <a href="https://github.com/tobias-fletcher/Pokedex">Link to GitHub</a>
-                </img>
-                </img> -->
+                                    </div>
 
-                <h2> <button id="myBtn">Pokedex</button></h2>
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close">&times;</span>
-                        <p>some text in modal</p>
+                                    <div style=" width: 30%; height: 40%; margin: 5%">
+                                        <h1> Objective</h1>
+                                        <p>
+                                            To build a small web application with HTML, CSS, and JavaScript that loads
+                                            data from an external API and enables the data to be viewed. You can search
+                                            for Pokemon using a search bar.
+                                        </p>
+
+                                        <img src="./img/pokeSearchPage.png" alt="view of pokemon details"
+                                            style="width: 300px; height: 225px;" />
+
+                                    </div>
+                                </div>
+                                <div style='display: flex; flex-direction:row; justify-content: center'>
+
+                                    <div style=" width: 30%; height: 40%; margin: 5%">
+                                        <h1>Tools/Skills</h1>
+                                        <p>
+                                            - Load data from an external source (API) <br />
+                                            - HTML; CSS; JS<br />
+                                            - user action (e.g., by clicking on a list item), view details for that
+                                            item<br />
+
+                                        </p>
+                                        <img src="./img/pokeModalDetails.png" alt="view of pokemon details"
+                                            style="width: 300px; height: 225px;" />
+                                    </div>
+                                    <div style=" width: 30%; height: 40%; margin:5%">
+                                        <h1>Purpose and Context</h1>
+                                        <p>
+                                            React Website displaying of Pokemon.
+                                            Show use of skills utilizing html/css/bootstrap
+                                            Use of external API to show pokemon.
+                                        </p>
+                                        <h1>Challenges</h1>
+                                        <p>This was the first time that I had the opportunity to utilize an API. I got
+                                            to learn how to query from the API website and use the information in my
+                                            application.</p>
+                                    </div>
+                                </div>
+                                <a style="margin-bottom: 10%" href="https://github.com/tobias-fletcher/Pokedex">Link to
+                                    GitHub</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="grid_item"
-                style='background-image: url("img/meetBackground.png"); background-size: cover; background-repeat: no-repeat;'>
-                <h2><a href="https://tobias-fletcher.github.io/meet/">Meet App</a></h2>
-                <p>
-                    App allowing user to search for events in a city
-                </p>
-                <a href="https://github.com/tobias-fletcher/meet">Link to GitHub</a>
+                <div class="grid_item"
+                    style='background-color: black; background-size: cover; background-repeat: no-repeat; border: solid;'>
+                    <h1>HorrorTime</h1>
+                    <button data-modal="modal2" class="modal-open">About App</button>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content" style=" overflow:auto">
+                            <div style="flex: none;">
+                                <button data-dismiss="modal2" class="modal-close"
+                                    style="margin-left: 90%; font-size: 15px; height: auto; margin-bottom: 0">Close</button>
+                                <h2 style="margin-top: 0; text-align: center; font-size: 40px; align-items: center">
+                                    <a href="https://zealous-banach-c1d750.netlify.app">HorrorTime</a>
+                                </h2>
+                                <div class="modal-style"
+                                    style="display: flex;align-items: center; justify-content: center">
+                                    <div style='display: flex; flex-direction:row; justify-content: center'>
+                                        <div style="width: 30%; height: 40%; margin: 5%">
+
+                                            <h1>Overview</h1>
+                                            <p>This is a web application built using React Redux. This application
+                                                allows users to register a user account, save their favorites, and
+                                                even update their user information. </p>
+                                        </div>
+                                        <div style="width: 30%; height: 40%; margin: 5%">
+                                            <h1> Objective</h1>
+                                            <p>
+                                                To build the server-side component of a “movies” web application. The
+                                                web
+                                                application will provide users with access to information about
+                                                different
+                                                movies, directors, and genres. Users will be able to sign up, update
+                                                their
+                                                personal information, and create a list of their favorite movies.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div style='display: flex; flex-direction:row; justify-content: center'>
+
+                                        <div style="width: 30%; height: 40%; contain:content; margin: 5%">
+                                            <h1>Purpose and Context</h1>
+                                            <p>
+                                                This was built to better understand server-side and client-side
+                                                logic.
+                                                It
+                                                expanded my knowledge of well-known libraries and frameworks such as
+                                                React
+                                                and
+                                                Redux.
+                                            </p>
+                                        </div>
+                                        <div style="width: 30%; height: 40%; contain: content; margin: 5%">
+                                            <h1>Approach </h1>
+                                            <h2>Client-side</h2>
+                                            <p>See <a href="https://zealous-banach-c1d750.netlify.app">HorrorTime</a>
+                                            </p>
+
+                                            <p></p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <p style="margin-bottom: 10%">
+                                    <a style="margin-bottom: 10%"
+                                        href="https://github.com/tobias-fletcher/horrorTime-client">Link to
+                                        GitHub</a>
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_item"
+                    style='background-color: black; background-size: cover; background-repeat: no-repeat; border: solid'>
+                    <h2>Mobile Chat App</h2>
+                    <button data-modal="modal3" class="modal-open">About App</button>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <div style="flex: none;">
+                                <button data-dismiss="modal3" class="modal-close"
+                                    style="margin-left: 90%; font-size: 15px; height: auto; margin-bottom: 0">Close</button>
+                                <h2 style="    margin-top: 0; text-align: center; font-size: 40px; align-items: center">
+                                    <a href="#">Mobile App</a>
+                                </h2>
+                                <p>
+                                    Objective:
+                                    To build a chat app for mobile devices using React Native. The app will
+                                    provide users with a chat interface and options to share images and their
+                                    location.
+                                </p>
+                                <p>
+                                    Key Features
+                                    ● A page where users can enter their name and choose a background color for the chat
+                                    screen
+                                    before joining the chat.
+                                    ● A page displaying the conversation, as well as an input field and submit button.
+                                    ● The chat must provide users with two additional communication features: sending
+                                    images
+                                    and location data.
+                                    ● Data gets stored online and offline.
+
+                                </p>
+                                <p>
+                                    ● React Native
+                                    ● Expo
+                                    ● GoogleFirestore Database
+                                    ● Firebase Cloud Storage
+                                </p>
+                                <p style="margin-bottom: 10%">
+                                    <a href="https://github.com/tobias-fletcher/MobileApp">Link to GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid_item"
+                    style='background-color: black; background-size: cover; background-repeat: no-repeat; border: solid'>
+                    <h2>Meet-App</h2>
+                    <button data-modal="modal4" class="modal-open">About App</button>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <div style="flex: none;">
+                                <button data-dismiss="modal4" class="modal-close"
+                                    style="margin-left: 90%; font-size: 15px; height: auto; margin-bottom: 0">Close</button>
+                                <h2 style="    margin-top: 0; text-align: center; font-size: 40px; align-items: center">
+                                    <a href="https://tobias-fletcher.github.io/meet/">Meet App</a>
+                                </h2>
+                                <p>
+                                    Objective
+                                    To build a serverless, progressive web application (PWA) with React using a
+                                    test-driven development (TDD) technique. The application uses the Google
+                                    Calendar API to fetch upcoming events.
+
+                                </p>
+                                <p>
+                                    Key Features:
+                                    ● Filter events by city.
+                                    ● Show/hide event details.
+                                    ● Specify number of events.
+                                    ● Use the app when offline.
+                                    ● Add an app shortcut to the home screen.
+                                    ● View a chart showing the number of upcoming events by city
+                                </p>
+                                <p>
+                                    ● React Application
+                                    ● TDD technique
+                                    ● Google Calendar Application
+                                    ● serverless functions
+                                    ● React axios and async
+                                </p>
+                                <p style="margin-bottom: 10%">
+                                    <a href="https://github.com/tobias-fletcher/meet/">Link to GitHub</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_item">
+                    <h2>Project 5</h2>
+                    <p>
+                        This is project 5
+                    </p>
+                    <a href="#">Link to Github</a>
+                </div>
+                <div class="grid_item">
+                    <h2>Project 6</h2>
+                    <p>
+                        This is project 6
+                    </p>
+                    <a href="#">Link to Github</a>
+                </div>
+                <!--grids will live here-->
             </div>
-            <div class="grid_item">
-                <h2>Project 3</h2>
-                <p>
-                    This is project 3
-                </p>
-                <a href="#">Link to Github</a>
-            </div>
-            <div class="grid_item">
-                <h2>Project 4</h2>
-                <p>
-                    This is project 4
-                </p>
-                <a href="#">Link to Github</a>
-            </div>
-            <div class="grid_item">
-                <h2>Project 5</h2>
-                <p>
-                    This is project 5
-                </p>
-                <a href="#">Link to Github</a>
-            </div>
-            <div class="grid_item">
-                <h2>Project 6</h2>
-                <p>
-                    This is project 6
-                </p>
-                <a href="#">Link to Github</a>
-            </div>
-            <!--grids will live here-->
-        </div>
-    </section>
-    <!--Footer with links to social media profiles-->
-    <footer class="page-footer">
-        <div class="social-media">
-            <p>Find me on</p>
-            <a href="https://github.com/tobias-fletcher">
-                <img src="img/icon.GitHub.svg" alt="Black & White Icon of Github which is
+        </section>
+        <!--Footer with links to social media profiles-->
+        <footer class="page-footer">
+            <div class="social-media">
+                <p>Find me on</p>
+                <a href="https://github.com/tobias-fletcher">
+                    <img src="img/icon.GitHub.svg" alt="Black & White Icon of Github which is
     an outline of a cat in a circle.">
-            </a>
-            <img src="img/icon.facebook.svg" alt="Black & White Icon of Facebook
+                </a>
+                <img src="img/icon.facebook.svg" alt="Black & White Icon of Facebook
     which is a white f in a black box.">
-            <a href="www.linkedin.com/in/tobias-fletcher-0906">
-                <img src="img/icon.linkedin2.svg" alt="Black & White Icon of LinkedIn which
+                <a href="https://www.linkedin.com/in/tobias-fletcher-0906">
+                    <img src="img/icon.linkedin2.svg" alt="Black & White Icon of LinkedIn which
     is white letters i n in a black box.">
-            </a>
-        </div>
-    </footer>
+                </a>
+            </div>
+        </footer>
 
-    <script src="js/tota11y.min.js"></script>
+        <script src="js/tota11y.min.js"></script>
+        <script src="js/workscript.js"></script>
 
-</body>
+
+    </body>
 
 </html>
